@@ -1,0 +1,68 @@
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+<nav id="navbar">
+  <header>SQL Tutorial</header>
+  <ul><li><a class="nav-link" href="#SQL_Introduction">SQL Introduction</a></li>
+    <li><a class="nav-link" href="#Connect_to_Database">Connect to Database</a></li>
+    <li><a class="nav-link" href="#Creating_a_Database">Creating a Database</a></li>
+    <li><a class="nav-link" href="#Querying_from_Database">Querying from Database</a></li>
+    <li><a class="nav-link" href="#Conclusion">Conclusion</a></li>
+  </ul>
+</nav>
+<main id ="main-doc">
+  <body>
+    <div><h1>SQL Documentation</h1></div>
+  <section class="main-section" id="SQL_Introduction">
+    <header>
+      <h2>SQL Introduction</h2>
+      </header>
+    <p>SQL is a standard language for accessing and manipulating databases.</p>
+    <p>
+      <ul id="Introlist">
+        <li>SQL stands for Structured Query Language</li>
+        <li>SQL lets you access and manipulate databases</li>
+        <li>SQL can execute queries against a database</li>
+        <li>Although SQL is an ANSI/ISO standard, there are different versions of the SQL language. However, to be compliant with the ANSI standard, they all support at least the major commands (such as SELECT, UPDATE, DELETE, INSERT, WHERE) in a similar manner</li>
+        <li>SQL can set permissions on tables, procedures, and views</li>
+        </ul>
+    </p>
+      </section>
+  <section class="main-section" id ="Connect_to_Database"><header>
+      <h2>Connect to Database</h2>
+    </header>
+    <p>Webpages connect to SQL databases using PHP. This is a very important step as it will allow you to input, modify or fetch data to/from the database</p>
+    <p>Creating a database involves installing MYSQL (or similar) server to host your data and then connecting your data to the webpage using the appropriate PHP scripts. Bear in mind that security of the database is very important and hence access should be restricted wherever necessary.</p>
+    </section>
+  <section class="main-section" id ="Creating_a_Database"><header>
+      <h2>Creating a Database</h2>
+      </header>
+        <p>In this example, we are using Microsoft's MYSQL software. Download the latest software and install it.</p>
+    <p>After installing the software, open the MySQL workbench. Create a new port and give the necessary login details. Store these credentials somewhere safe.</p>
+    <p>Next, MySQL will prompt you to create a new database. Give the database a name and type in the following command in the SQL editor to start using your database.</p>
+    <code>use database your_database_name;
+    </code>
+    <p>Insert your database name at your_database_name</p>
+      </section>
+  <section class="main-section" id ="Querying_from_Database"><header>
+      <h2>Querying from Database</h2>
+      </header>
+        <p>The SELECT command is used to select data and get it from the database.</p>
+    <code>SELECT * from your_database_name;</code>
+    <p>This would show the entire data in your database. * means everything.</p><p>SELECT DISTINCT is a variant of SELECT statement. This fetches only the distinct values in the database.</p>
+    <code>SELECT DISTINCT * from you_database_name;</code>
+    <p>Next is the WHERE clause. This is used to fetch data which fulfill one or more criteria. State the condition after the WHERE clause.</p>
+    <code>SELECT * from your_database_name WHERE condition;</code>
+    <p>The INSERT INTO statement is used to insert new records in a table.</p>
+    <code>INSERT INTO table_name (column1, column2, column3, ...)
+VALUES (value1, value2, value3, ...);</code>
+    <p>The UPDATE statement is used to modify the existing records in a table.</p>
+    <code>UPDATE table_name
+SET column1 = value1, column2 = value2, ...
+WHERE condition;</code>
+      </section>
+  <section class="main-section" id ="Conclusion"><header>
+      <h2>Conclusion</h2>
+      </header>
+        <p>SQL is extremely useful to efficiently use store, modify and use your data thereby giving an edge in drawing out meaningful insights to further your business.</p>
+      </section>
+    </body>
+</main>
